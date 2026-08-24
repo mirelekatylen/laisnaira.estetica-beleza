@@ -38,3 +38,115 @@ nav a {
 nav a:hover {
   color: #a66a7b;
 }
+
+/* Página de contato */
+
+.contato {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contato h1 {
+  margin-bottom: 35px;
+}
+
+.contato > p {
+  margin-bottom: 35px;
+}
+
+.contato-opcoes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.contato-opcoes a {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+}
+
+.endereco,
+.horario {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.endereco h2,
+.horario h2 {
+    margin-bottom: 15px;
+}
+
+.endereco p,
+.horario p {
+    line-height: 1.6;
+}
+
+.endereco a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+/* Estilização dos cards dentro da página de contatos*/
+
+.contato-card {
+    width: 230px;
+    min-height: 180px;
+    padding: 30px 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    
+    color: #333;
+
+    background-color: #ffffff;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Estilização do conteúdo que está dentro dos cards na página de contatos*/
+
+.contato-card .icone {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.contato-card {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contato-card p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.contato-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+/*Telas menores*/
+@media (max-width: 600px) {
+
+    .contato-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
