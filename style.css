@@ -250,3 +250,136 @@ nav a:hover {
     }
 
 }
+
+/*Página inicial, toda a estrutura, fora o cabeçalho*/
+/*Foto no plano de fundo*/
+
+.inicio {
+  position: relative;
+  min-height: 100vh;
+
+  background-image: url("imagens/lais-profissional-capa.jpg");
+  background-size: cover;
+  background-position: center 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 10%;
+}
+
+/*Edição da imagem na página inicial*/
+
+.camada-fundo {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
+.conteudo-inicio {
+  position: relative;
+  z-index: 1;
+
+  max-width: 800px;
+  text-align: center;
+}
+
+.conteudo-inicio h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+
+/*Caixa de apresentação*/
+.apresentacao {
+  background-color: rgba(255, 255, 255, 0.80);
+
+  padding: 40px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/*Título e texto*/
+
+.apresentacao h2 {
+  margin-bottom: 20px;
+}
+
+.texto-justificado {
+  text-align: justify;
+
+  line-height: 1.7;
+
+  margin-bottom: 30px;
+}
+
+/*Botão*/
+.botao-servicos {
+  display: inline-block;
+
+  padding: 14px 28px;
+
+  border-radius: 30px;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+
+.botao-servicos:hover {
+  transform: scale(1.05);
+}
+
+/*Página sobre, toda a estrutura, fora o cabeçalho*/
+/*Foto no plano de fundo*/
+
+.sobre {
+  position: relative;
+  min-height: 100vh;
+
+  background-image: url("imagens/IMG-20260714-WA0022.jpg");
+  background-size: cover;
+  background-position: center 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 10%;
+}
+
+/*Edição da foto*/
+
+.camada-sobre {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
+.conteudo-sobre {
+  position: relative;
+  z-index: 1;
+
+  max-width: 800px;
+  margin: auto;
+}
