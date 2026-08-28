@@ -14,7 +14,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 8px 32px;
-  background-color: white;
+  background-color: #C5A059;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -35,11 +35,12 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
-  color: #a66a7b;
+nav a:hover,
+nav a.active {
+  color: #5A4630;
 }
 
-/* Página de contato */
+/* PÁGINA DE CONTATO */
 
 .contato {
   text-align: center;
@@ -188,7 +189,7 @@ nav a:hover {
 }
 
 .servico-imagem img {
-    width: 100%;
+    width: 75%;
     display: block;
 
     border-radius: 10px;
@@ -281,8 +282,10 @@ nav a:hover {
   height: 100%;
 
   background-color: rgba(255, 255, 255, 0.55);
+  z-index: 0;
 }
 
+/*CONTEÚDO DA PÁGINA*/
 .conteudo-inicio {
   position: relative;
   z-index: 1;
@@ -303,7 +306,7 @@ nav a:hover {
 
 /*Caixa de apresentação*/
 .apresentacao {
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: rgb(255, 255, 255, 0.80);
 
   padding: 40px;
 
@@ -351,7 +354,7 @@ nav a:hover {
   position: relative;
   min-height: 100vh;
 
-  background-image: url("imagens/IMG-20260714-WA0022.jpg");
+  background-image: url("imagens/lais-profissional2.jpg");
   background-size: cover;
   background-position: center 5%;
 
@@ -377,6 +380,95 @@ nav a:hover {
 }
 
 .conteudo-sobre {
+  position: relative;
+  z-index: 1;
+
+  max-width: 800px;
+  margin: auto;
+}
+
+/*QUADROS PARA APRESENTAR AS ESPECIALIZAÇÕES NA ABA SOBRE*/
+.quadro {
+  background-color: rgb(255, 255, 255, 0.80);
+
+  padding: 40px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+  margin-bottom: 30px;
+}
+
+.quadro2 {
+  background-color: rgb(255, 255, 255, 0.80);
+
+  padding: 40px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+  margin-bottom: 30px;
+}
+
+.quadro3 {
+  background-color: rgb(255, 255, 255, 0.80);
+
+  padding: 40px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+  margin-bottom: 30px;
+}
+
+.quadro4 {
+  background-color: rgb(255, 255, 255, 0.80);
+
+  padding: 40px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+  margin-bottom: 30px;
+}
+
+/*Página avaliações, toda a estrutura, fora o cabeçalho*/
+/*Foto no plano de fundo*/
+
+.faq {
+  position: relative;
+  min-height: 100vh;
+
+  background-image: url("imagens/lais-profissional3.jpg");
+  background-size: cover;
+  background-position: center 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 10%;
+}
+
+/*Edição da foto*/
+
+.camada-faq {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
+.conteudo-faq {
   position: relative;
   z-index: 1;
 
