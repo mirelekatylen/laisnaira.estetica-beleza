@@ -285,12 +285,12 @@ nav a.active {
   z-index: 0;
 }
 
-/*CONTEÚDO DA PÁGINA*/
+/*CONTEÚDO DA PÁGINA, TEXTO DO QUADRO*/
 .conteudo-inicio {
   position: relative;
   z-index: 1;
 
-  max-width: 800px;
+  max-width: 1200px;
   text-align: center;
 }
 
@@ -474,4 +474,17 @@ nav a.active {
 
   max-width: 800px;
   margin: auto;
+}
+
+/*TEXTO AO LADO DA LOGO-MARCA NA PÁGINA SERVIÇOS*/
+.logo-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area span {
+    font-size: 18px;
+    color: #5A4630;
 }
