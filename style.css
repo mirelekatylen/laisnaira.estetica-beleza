@@ -152,11 +152,11 @@ nav a.active {
 
 }
 
-/*Página de serviços*/
+/*PÁGINA DE SERVIÇOS*/
 
 .titulo-servicos {
     text-align: center;
-    padding: 120px 20px 80px;
+    padding: 70px 20px 45px;
 }
 
 .titulo-servicos h1 {
@@ -173,26 +173,35 @@ nav a.active {
 .servico {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 70px 30px;
+    padding: 55px 30px;
 
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 80px;
 
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #e5e0da;
 }
 
-/*Imagem*/
+/*ALTERA A POSIÇÃO DA IMAGEM EM CADA SERVIÇO*/
+
+.servico.invertido {
+  flex-direction: row-reverse;
+}
+
+/*IMAGEM*/
 
 .servico-imagem {
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .servico-imagem img {
-    width: 75%;
+    width: 100%;
+    max-width: 480px;
     display: block;
 
-    border-radius: 10px;
+    border-radius: 14px;
 }
 
 /*Informações*/
@@ -202,28 +211,39 @@ nav a.active {
 }
 
 .servico-informacoes h2 {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    font-size: 30px;
 }
 
 .servico-descricao {
     line-height: 1.8;
     margin-bottom: 25px;
+    max-width: 520px;
+}
+
+.servico-informacoes h2::after{
+  content: "";
+  display: block;
+  width: 45px;
+  height: 2px;
+  background-color: #c8a96b;
+  margin-top: 10px;
 }
 
 /*Preço e duração*/
 
 .servico-detalhes {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .servico-detalhes p {
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 /*Beneficios*/
 
 .servico-informacoes h3 {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .servico-informacoes ul {
@@ -231,23 +251,30 @@ nav a.active {
 }
 
 .servico-informacoes li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 /*Responsividade*/
 
 @media (max-width: 768px) {
 
-    .servico {
-        flex-direction: column;
+    .servico,
+    .servico.invertido {
+      flex-direction: column;
+      gap: 35px;
+      padding: 50px 25px;
+    }
 
-        gap: 35px;
-
-        padding: 50px 25px;
+    .servico-imagem img {
+      max-width: 100%;
     }
 
     .titulo-servicos {
-        padding: 100px 20px 60px;
+        padding: 60px 20px 40px;
+    }
+
+    .servico-informacoes h2 {
+      font-size: 26px;
     }
 
 }
