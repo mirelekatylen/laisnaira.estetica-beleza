@@ -40,6 +40,18 @@ nav a.active {
   color: #5A4630;
 }
 
+/*TIPOGRAFIA DO SITE*/
+
+body {
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display' serif;
+}
+
 /* PÁGINA DE CONTATO */
 
 .contato {
@@ -254,6 +266,29 @@ nav a.active {
     margin-bottom: 8px;
 }
 
+/*BOTÃO DE AGENDAMENTO*/
+.botao-agendar {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 13px 24px;
+
+  background-color: #C8A96B;
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+  }
+
+  .botao-agendar:hover{
+    background-color: #A98A50;
+    transform: translateY(-2px);
+  }
 /*Responsividade*/
 
 @media (max-width: 768px) {
