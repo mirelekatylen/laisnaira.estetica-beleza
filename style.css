@@ -242,7 +242,7 @@ h3 {
   margin-top: 10px;
 }
 
-/*Preço e duração*/
+/*PREÇO E DURAÇÃO*/
 
 .servico-detalhes {
     margin-bottom: 28px;
@@ -409,7 +409,7 @@ h3 {
   transform: scale(1.05);
 }
 
-/*Página sobre, toda a estrutura, fora o cabeçalho*/
+/*PÀGINA SOBRE,toda a estrutura, fora o cabeçalho*/
 /*Foto no plano de fundo*/
 
 .sobre {
@@ -450,44 +450,12 @@ h3 {
 }
 
 /*QUADROS PARA APRESENTAR AS ESPECIALIZAÇÕES NA ABA SOBRE*/
-.quadro {
-  background-color: rgb(255, 255, 255, 0.80);
 
-  padding: 40px;
-
-  border-radius: 15px;
-
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-
-  margin-bottom: 30px;
-}
-
-.quadro2 {
-  background-color: rgb(255, 255, 255, 0.80);
-
-  padding: 40px;
-
-  border-radius: 15px;
-
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-
-  margin-bottom: 30px;
-}
-
-.quadro3 {
-  background-color: rgb(255, 255, 255, 0.80);
-
-  padding: 40px;
-
-  border-radius: 15px;
-
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-
-  margin-bottom: 30px;
-}
-
+.quadro,
+.quadro2,
+.quadro3,
 .quadro4 {
-  background-color: rgb(255, 255, 255, 0.80);
+  background-color: rgba(255, 255, 255, 0.80);
 
   padding: 40px;
 
@@ -496,6 +464,56 @@ h3 {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 
   margin-bottom: 30px;
+
+  text-align: left;
+}
+
+/*TITULO DE CADA ESPECIALIZAÇÃO*/
+
+.quadro h3,
+.quadro2 h3,
+.quadro3 h3,
+.quadro4 h3 {
+  margin: top 0;
+  margin-bottom: 20px;
+}
+
+/*PARÁGRAFOS*/
+
+.quadro p,
+.quadro2 p,
+.quadro3 p,
+.quadro4 p {
+  line-height: 1.8;
+  margin: 0 0 16px;
+  text-align: justify;
+}
+
+/*DESTAQUE DO "VOCÊ SABIA?*/
+
+.quadro p strong,
+.quadro2 p strong,
+.quadro3 p strong,
+.quadro4 p strong {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+.diferencial-sobre {
+  text-align: justify;
+}
+
+.apresentacao-sobre {
+  text-align: justify;
+}
+
+.especializacoes-sobre {
+  text-align: justify
+}
+
+.cta-sobre {
+  text-align: justify;
 }
 
 /*Página avaliações, toda a estrutura, fora o cabeçalho*/
