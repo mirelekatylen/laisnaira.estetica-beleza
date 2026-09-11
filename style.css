@@ -105,7 +105,7 @@ h3 {
     text-decoration: none;
 }
 
-/* Estilização dos cards dentro da página de contatos*/
+/* ESTILIZAÇÃO DOS CARDS NA PÁGINA DE CONTATOS */
 
 .contato-card {
     width: 230px;
@@ -131,7 +131,7 @@ h3 {
                 box-shadow 0.3s ease;
 }
 
-/* Estilização do conteúdo que está dentro dos cards na página de contatos*/
+/* ESTILIZAÇÃO DO CONTEÚDO QUE ESTÁ DENTRO DOS CARDS NA PÁGINA DE CONTATOS */
 
 .contato-card .icone {
     font-size: 35px;
@@ -154,7 +154,7 @@ h3 {
 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
-/*Telas menores*/
+/* TELAS MENORES */
 @media (max-width: 600px) {
 
     .contato-card {
