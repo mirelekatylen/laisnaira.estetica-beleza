@@ -653,8 +653,8 @@ h3 {
   text-align: justify;
 }
 
-/*Página avaliações, toda a estrutura, fora o cabeçalho*/
-/*Foto no plano de fundo*/
+/*PÁGINA AVALIAÇÕES, TODA A ESTRUTURA, FORA O CABEÇALHO*/
+/*FOTO NO PLANO DE FUNDO*/
 
 .faq {
   position: relative;
@@ -691,6 +691,107 @@ h3 {
 
   max-width: 800px;
   margin: auto;
+}
+
+/* ELEMENTOS DO FAQ */
+
+.conteudo-faq {
+  text-align: center;
+  max-width: 850px;
+}
+
+.conteudo-faq h1 {
+  margin-bottom: 12px;
+}
+
+.introducao-faq{
+  max-width: 650px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+.lista-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.item-faq {
+  background-color: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(200, 169, 107, 0.25);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.item-faq:hover{
+ background-color: rgba(255, 255, 255, 0.92);
+}
+
+.item-faq summary {
+  position: relative;
+  padding: 19px 55px 19px 25px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  color: #4A3A32;
+}
+
+.item-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.item-faq summary::after {
+  content: "⌄";
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #C8A96B;
+  transition: transform 0.3s ease;
+}
+
+.item-faq[open] summary::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.resposta-faq {
+  padding: 0 25px 20px;
+  color: #4A3A32;
+  line-height: 1.7;
+}
+
+.resposta-faq p {
+  margin: 0;
+}
+
+.item-faq summary:focus {
+  outline: none;
+}
+
+.item-faq summary:focus-visible {
+  outline: 2px solid #C8A96B;
+  outline-offset: -2px;
+}
+/* RESPONSIVIDADE DO FAQ */
+
+@media (max-width: 600px) {
+
+  .faq {
+    padding: 60px 20px;
+  }
+
+  .item-faq summary {
+    padding: 18px 50px 18px 20px;
+  }
+
+  .resposta-faq {
+    padding: 0 20px 20px;
+  }
+
 }
 
 /*TEXTO AO LADO DA LOGO-MARCA NA PÁGINA SERVIÇOS*/
