@@ -391,7 +391,7 @@ h3 {
   margin-bottom: 30px;
 }
 
-/*Botão*/
+/* BOTÃO */
 .botao-servicos {
   display: inline-block;
 
@@ -404,8 +404,145 @@ h3 {
   transition: 0.3s;
 }
 
+.botoes-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-.botao-servicos:hover {
+.botao-sobre,
+.botao-servicos{
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.botao-servicos:hover,
+.botao-sobre:hover {
+  transform: scale(1.05);
+}
+
+/* RESUMO DE SERVIÇOS NA PÁGINA INICIAL */
+
+.resumo-servicos {
+  padding: 80px 10%;
+  text-align: center;
+  background-color: #faf8f5;
+  }
+
+.resumo-servicos h2 {
+  margin-bottom: 15px;
+}
+
+.resumo-servicos > p {
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.cards-servicos {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.card-servico {
+  width: 220px;
+  min-height: 180px;
+
+  padding: 30px 25px;
+
+  background-color: #ffffff;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.card-servico h3 {
+  margin-bottom: 15px;
+}
+
+.card-servico p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.card-servico:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.botao-ver-servicos {
+  display: inline-block;
+
+  padding: 14px 28px;
+
+  border-radius: 30px;
+
+  text-decoration: none;
+
+  color: #ffffff;
+  background-color: #C8A96B;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.botao-ver-servicos:hover {
+  transform: scale(1.05);
+}
+
+/* CTA FINAL DA PÁGINA DE INICIAL */
+
+.cta-inicio {
+  padding: 80px 20px;
+
+  text-align: center;
+
+  background-color: #4A3A32;
+
+  color: #FAF8F5;
+}
+
+.cta-inicio h2 {
+  margin-bottom: 25px;
+}
+
+.botao-agendar {
+  display: inline-block;
+
+  padding: 14px 30px;
+
+  background-color: #C8A96B;
+  color: #ffffff;
+
+  border-radius: 30px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.botao-agendar:hover {
   transform: scale(1.05);
 }
 
