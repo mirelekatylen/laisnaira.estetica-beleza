@@ -776,6 +776,144 @@ h3 {
   outline: 2px solid #C8A96B;
   outline-offset: -2px;
 }
+
+/* ELEMENTOS DE AVALIAÇÃO */
+
+.avaliacoes-clientes {
+  padding: 80px 10%;
+  background-color: #FAF8F5;
+}
+
+.conteudo-avaliacoes {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.conteudo-avaliacoes h2 {
+  margin-bottom: 15px;
+}
+
+.introducao-avaliacoes {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+/* CARROSSEL */
+
+.carrossel-avaliacoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.imagem-avaliacao {
+  width: 600px;
+  min-height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff;
+  border-radius: 15px;
+
+  padding: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+.imagem-avaliacao img {
+  display: block;
+  max-width: 100%;
+  max-height: 600px;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* SETAS */
+
+.seta-avaliacao {
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: #C8A96B;
+  color: #fff;
+
+  font-size: 24PX;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.3s ease;
+}
+
+.seta-avaliacao:hover {
+  transform: scale(1.08);
+}
+
+/* INDICADORES */
+
+.indicadores-avaliacoes {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  margin-top: 25px;
+}
+
+.indicador {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background-color: #D8CEC5;
+
+  transition: 0.3s ease;
+}
+
+.indicador.ativo {
+  background-color: #C8A96B;
+  transform: scale(1.2);
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+  .avaliacoes-clientes {
+    padding: 60px 20px;
+  }
+
+  .carrossel-avaliacoes {
+    gap: 10px;
+  }
+
+  .imagem-avaliacao {
+    width: 100%;
+    min-height: 300px;
+    padding: 10px;
+  }
+
+  .seta-avaliacao {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+}
+
 /* RESPONSIVIDADE DO FAQ */
 
 @media (max-width: 600px) {
