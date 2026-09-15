@@ -509,6 +509,48 @@ h3 {
   transform: scale(1.05);
 }
 
+/* RESUMO DAS AVALIAÇÕES NA PÁGINA DE INICIO */
+
+.resumo-avaliacoes {
+  padding: 80px 10%;
+  text-align: center;
+  background-color: #ede1dc;
+}
+
+.resumo-avaliacoes h2 {
+  margin-bottom: 15px;
+}
+
+.resumo-avaliacoes > p {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+.avaliacao-destaque-inicio {
+  max-width: 500px;
+  margin: 0 auto 35px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+.botao-ver-avaliacoes {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #C8A96B;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.botao-ver-avaliacoes:hover {
+  transform: scale(1.05);
+}
+
 /* CTA FINAL DA PÁGINA DE INICIAL */
 
 .cta-inicio {
@@ -832,6 +874,8 @@ h3 {
   width: auto;
   height: auto;
   border-radius: 8px;
+
+  transition: opacity 0.4s ease;
 }
 
 /* SETAS */

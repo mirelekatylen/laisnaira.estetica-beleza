@@ -21,7 +21,12 @@ let indiceAtual = 0;
 
 // REALIZA A TROCA DA IMAGEM
 function mostrarAvaliacao() {
-    imagem.src = avaliacoes[indiceAtual];
+    imagem.style.opacity = 0;
+
+    setTimeout(function() {
+        imagem.src = avaliacoes[indiceAtual];
+        imagem.style.opacity = 1;
+    },200);
 
     indicadores.forEach(function(indicador, indice) {
         indicador.classList.toggle("ativo", indice === indiceAtual);
