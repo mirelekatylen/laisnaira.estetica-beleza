@@ -55,16 +55,72 @@ h3 {
 /* PÁGINA DE CONTATO */
 
 .contato {
+  position: relative;
+  overflow: hidden;
+
   text-align: center;
   padding: 60px 20px;
+
+  background-color: #FAF8F5;
+}
+
+.decoracao-circulos {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.circulo {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(200, 169, 107, 0.25);
+}
+
+/* CIRCULO DO LADO ESQUERDO */
+.circulo-esquerda-1 {
+    width: 650px;
+    height: 650px;
+    top: 80px;
+    left: -400px;
+}
+
+.circulo-esquerda-2 {
+    width: 690px;
+    height: 690px;
+    top: 60px;
+    left: -420px;
+    border-color: rgba(200, 169, 107, 0.12);
+}
+
+/* CÍRCULOS DO LADO DIREITO */
+
+.circulo-direita-1 {
+    width: 750px;
+    height: 750px;
+    bottom: 40px;
+    right: -470px;
+    border-color: rgba(200, 169, 107, 0.24);
+}
+
+.circulo-direita-2 {
+    width: 790px;
+    height: 790px;
+    bottom: 20px;
+    right: -490px;
+    border-color: rgba(200, 169, 107, 0.10);
 }
 
 .contato h1 {
   margin-bottom: 35px;
+  position: relative;
+  z-index: 1;
 }
 
 .contato > p {
   margin-bottom: 35px;
+  position: relative;
+  z-index: 1;
 }
 
 .contato-opcoes {
@@ -73,6 +129,8 @@ h3 {
   gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
 }
 
 .contato-opcoes a {
@@ -87,6 +145,7 @@ h3 {
     margin: 30px auto;
     padding: 25px;
     border-radius: 10px;
+    
 }
 
 .endereco h2,
@@ -164,11 +223,52 @@ h3 {
 
 }
 
-/*PÁGINA DE SERVIÇOS*/
+/* PÁGINA DE SERVIÇOS */
+/* FUNDO DECORATIVO PARA A PÁGINA DE SERVIÇOS */
+
+.pagina-servicos {
+  position: relative;
+  background-color: #FAF8F5;
+  overflow: hidden;
+}
+
+.pagina-servicos::before {
+  content: "";
+  position: absolute;
+
+  width: 650px;
+  height: 650px;
+
+  border: 1px solid rgba(200,169,107,0.32);
+  border-radius: 50%;
+
+  top: 80px;
+  left: -390px;
+
+  z-index: 0;
+}
+
+.pagina-servicos::after {
+  content: "";
+  position: absolute;
+
+  width: 800px;
+  height: 800px;
+
+  border: 1px solid rgba(200,169,107,0.26);
+  border-radius: 50%;
+
+  bottom: 50px;
+  right: -500px;
+
+  z-index: 0;
+}
 
 .titulo-servicos {
-    text-align: center;
-    padding: 70px 20px 45px;
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
 }
 
 .titulo-servicos h1 {
@@ -183,15 +283,18 @@ h3 {
 /*Bloco de cada serviço*/
 
 .servico {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 55px 30px;
+  position: relative;
+  z-index: 1;
 
-    display: flex;
-    align-items: center;
-    gap: 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 55px 30px;
 
-    border-bottom: 1px solid #e5e0da;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+
+  border-bottom: 1px solid #e5e0da;
 }
 
 /*ALTERA A POSIÇÃO DA IMAGEM EM CADA SERVIÇO*/
@@ -514,7 +617,7 @@ h3 {
 .resumo-avaliacoes {
   padding: 80px 10%;
   text-align: center;
-  background-color: #ede1dc;
+  background-color: #F5F0EA;
 }
 
 .resumo-avaliacoes h2 {
@@ -534,6 +637,13 @@ h3 {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+.avaliacao-destaque-inicio img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .botao-ver-avaliacoes {
