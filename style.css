@@ -1,3 +1,5 @@
+/* CABEÇALHO FIXO */
+
 .texto-justificado {
   text-align: justify;
 }
@@ -40,16 +42,47 @@ nav a.active {
   color: #5A4630;
 }
 
+/* RODAPÉ */
+
+footer {
+  padding: 25px 20px;
+  text-align: center;
+  background-color: #4A3A32;
+  color: #FAF8F5;
+  font-size: 13px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+.credito-desenvolvedora {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.link-desenvolvedora {
+  color: #C8A96B;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.link-desenvolvedora:hover {
+  opacity: 0.75;
+}
+
 /*TIPOGRAFIA DO SITE*/
 
 body {
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Playfair Display' serif;
+  font-family: 'Playfair Display', serif;
 }
 
 /* PÁGINA DE CONTATO */
@@ -1021,7 +1054,7 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 8px;
-
+  margin-bottom: 50px;
   margin-top: 25px;
 }
 
