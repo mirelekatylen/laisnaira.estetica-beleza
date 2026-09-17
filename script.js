@@ -6,6 +6,9 @@ const indicadores = document.querySelectorAll(".indicador");
 
 console.log("JavaScript conectado!");
 
+// SÓ EXECUTE O CARROSSEL SE ELE EXISTIR NA PÁGINA
+
+
 // MOSTRANDO AO JAVA AS IMAGENS QUE FARÃO PARTE DO CARROSSEL
 const avaliacoes = [
     "imagens/img1.png",
@@ -61,3 +64,14 @@ setInterval(function() {
     }
     mostrarAvaliacao();
 },5000);
+
+// MENU MOBILE
+const botaoMenu = document.querySelector(".menu-mobile");
+const menuNavegacao = document.querySelector("#menu-navegacao");
+
+if (botaoMenu && menuNavegacao) {
+botaoMenu.addEventListener("click", function(){
+    const menuAberto = menuNavegacao.classList.toggle("menu-aberto");
+    botaoMenu.setAttribute("aria-expanded", menuAberto);
+});
+}

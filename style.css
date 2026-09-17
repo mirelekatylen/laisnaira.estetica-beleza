@@ -42,6 +42,58 @@ nav a.active {
   color: #5A4630;
 }
 
+/* MENU MOBILE */
+
+.menu-mobile {
+  display: none;
+}
+
+/* CONFIGURAÇÃO DO MENU NO CELULAR */
+
+@media (max-width: 768px) {
+  .menu-mobile {
+    display: block;
+    background-color: none;
+    border: none;
+    color: #4a3025;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.menu-aberto {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    right: 15px;
+
+    flex-direction: column;
+    gap: 0;
+
+    width: 180px;
+    padding: 10px 0;
+    background-color: #FAF8F5;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  nav.menu-aberto a {
+    padding: 14px 20px;
+    color: #4A3A32;
+    text-decoration: none;
+  }
+
+  nav.menu-aberto a:hover,
+  nav.menu-aberto a.active {
+    color: #C8A96B;
+  }
+}
+
 /* RODAPÉ */
 
 footer {
@@ -110,7 +162,7 @@ h3 {
     border: 1px solid rgba(200, 169, 107, 0.25);
 }
 
-/* CIRCULO DO LADO ESQUERDO */
+/* CIRCULO DO LADO ESQUERDO DA PÁGINA DE CONTATO */
 .circulo-esquerda-1 {
     width: 650px;
     height: 650px;
@@ -126,7 +178,7 @@ h3 {
     border-color: rgba(200, 169, 107, 0.12);
 }
 
-/* CÍRCULOS DO LADO DIREITO */
+/* CÍRCULOS DO LADO DIREITO DA PÁGINA DE CONTATO */
 
 .circulo-direita-1 {
     width: 750px;
@@ -330,7 +382,7 @@ h3 {
   border-bottom: 1px solid #e5e0da;
 }
 
-/*ALTERA A POSIÇÃO DA IMAGEM EM CADA SERVIÇO*/
+/*ALTERA A POSIÇÃO DA IMAGEM EM CADA SERVIÇO NA PÁGINA DE SERVIÇOS */
 
 .servico.invertido {
   flex-direction: row-reverse;
@@ -352,7 +404,7 @@ h3 {
     border-radius: 14px;
 }
 
-/*Informações*/
+/*BLOCO DE INFORMAÇÕES NA PÁGINA DE SERVIÇOS */
 
 .servico-informacoes {
     flex: 1;
@@ -378,7 +430,7 @@ h3 {
   margin-top: 10px;
 }
 
-/*PREÇO E DURAÇÃO*/
+/*PREÇO E DURAÇÃO NA PÁGINA DE SERVIÇOS */
 
 .servico-detalhes {
     margin-bottom: 28px;
@@ -388,7 +440,7 @@ h3 {
     margin: 8px 0;
 }
 
-/*Beneficios*/
+/*ABA DE BENEFÍCIOS NA PÁGINA DE SERVIÇOS */
 
 .servico-informacoes h3 {
     margin-bottom: 12px;
@@ -402,7 +454,7 @@ h3 {
     margin-bottom: 8px;
 }
 
-/*BOTÃO DE AGENDAMENTO*/
+/*BOTÃO DE AGENDAMENTO NA PÁGINA DE SERVIÇOS */
 .botao-agendar {
   display: inline-block;
 
@@ -425,7 +477,7 @@ h3 {
     background-color: #A98A50;
     transform: translateY(-2px);
   }
-/*Responsividade*/
+/* RESPONSIVIDADE DA PÁGINA DE SERVIÇOS */
 
 @media (max-width: 768px) {
 
@@ -450,8 +502,8 @@ h3 {
 
 }
 
-/*Página inicial, toda a estrutura, fora o cabeçalho*/
-/*Foto no plano de fundo*/
+/* PÁGINA INÍCIO, TODA A ESTRUTURA, FOREA O CABEÇALHO */
+/* FOTO DO PLANO DE FUNDO */
 
 .inicio {
   position: relative;
@@ -468,7 +520,7 @@ h3 {
   padding: 80px 10%;
 }
 
-/*Edição da imagem na página inicial*/
+/* EDIÇÃO DA IMAGEM NA PÁGINA INÍCIO */
 
 .camada-fundo {
   position: absolute;
@@ -483,7 +535,7 @@ h3 {
   z-index: 0;
 }
 
-/*CONTEÚDO DA PÁGINA, TEXTO DO QUADRO*/
+/* CONTEÚDO DA PÁGINA, TEXTO DO QUADRO NA PÁGINA INÍCIO */
 .conteudo-inicio {
   position: relative;
   z-index: 1;
@@ -502,7 +554,7 @@ h3 {
   margin-bottom: 40px;
 }
 
-/*Caixa de apresentação*/
+/* CAIXA DE APRESENTAÇÃO NA PÁGINA INÍCIO */
 .apresentacao {
   background-color: rgb(255, 255, 255, 0.80);
 
@@ -513,7 +565,7 @@ h3 {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
-/*Título e texto*/
+/* TÍTULO E TEXTO NA PÁGINA INÍCIO */
 
 .apresentacao h2 {
   margin-bottom: 20px;
@@ -527,7 +579,7 @@ h3 {
   margin-bottom: 30px;
 }
 
-/* BOTÃO */
+/* BOTÃO NA PÁGINA INÍCIO */
 .botao-servicos {
   display: inline-block;
 
@@ -562,7 +614,7 @@ h3 {
   transform: scale(1.05);
 }
 
-/* RESUMO DE SERVIÇOS NA PÁGINA INICIAL */
+/* RESUMO DE SERVIÇOS NA PÁGINA INICIO */
 
 .resumo-servicos {
   padding: 80px 10%;
@@ -694,7 +746,7 @@ h3 {
   transform: scale(1.05);
 }
 
-/* CTA FINAL DA PÁGINA DE INICIAL */
+/* CTA FINAL DA PÁGINA DE INICIO */
 
 .cta-inicio {
   padding: 80px 20px;
