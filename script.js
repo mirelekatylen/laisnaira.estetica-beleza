@@ -7,6 +7,7 @@ const indicadores = document.querySelectorAll(".indicador");
 console.log("JavaScript conectado!");
 
 // SÓ EXECUTE O CARROSSEL SE ELE EXISTIR NA PÁGINA
+if (imagem && setaEsquerda && setaDireita) {
 
 
 // MOSTRANDO AO JAVA AS IMAGENS QUE FARÃO PARTE DO CARROSSEL
@@ -34,6 +35,7 @@ function mostrarAvaliacao() {
     indicadores.forEach(function(indicador, indice) {
         indicador.classList.toggle("ativo", indice === indiceAtual);
     });
+
 }
 
 // FUNÇÃO PARA MOSTRAR A AVALIAÇÃO
@@ -64,6 +66,7 @@ setInterval(function() {
     }
     mostrarAvaliacao();
 },5000);
+}
 
 // MENU MOBILE
 const botaoMenu = document.querySelector(".menu-mobile");

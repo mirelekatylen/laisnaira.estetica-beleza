@@ -94,6 +94,13 @@ nav a.active {
   }
 }
 
+/* OCULTA O NOME DA BARRA FIXA NO MOILE */
+@media (max-width: 768px) {
+  .logo-area span {
+    display: none;
+  }
+}
+
 /* RODAPÉ */
 
 footer {
@@ -788,11 +795,10 @@ h3 {
 
 .sobre {
   position: relative;
+  overflow: hidden;
   min-height: 100vh;
 
-  background-image: url("imagens/lais-profissional2.jpg");
-  background-size: cover;
-  background-position: center 5%;
+  background-color: #FAF8F5;
 
   display: flex;
   align-items: center;
@@ -802,18 +808,6 @@ h3 {
 }
 
 /*Edição da foto*/
-
-.camada-sobre {
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(255, 255, 255, 0.55);
-}
 
 .conteudo-sobre {
   position: relative;
@@ -848,7 +842,7 @@ h3 {
 .quadro2 h3,
 .quadro3 h3,
 .quadro4 h3 {
-  margin: top 0;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -863,7 +857,7 @@ h3 {
   text-align: justify;
 }
 
-/*DESTAQUE DO "VOCÊ SABIA?*/
+/* DESTAQUE DO "VOCÊ SABIA? NA PÁGINA SOBRE */
 
 .quadro p strong,
 .quadro2 p strong,
@@ -888,6 +882,19 @@ h3 {
 
 .cta-sobre {
   text-align: justify;
+}
+
+/* RESPONSIVIDADE DA PÁGINA SOBRE */
+
+@media (max-width: 768px) {
+  .sobre {
+    padding: 50px 20px;
+  }
+
+  .conteudo-sobre {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 /*PÁGINA AVALIAÇÕES, TODA A ESTRUTURA, FORA O CABEÇALHO*/
