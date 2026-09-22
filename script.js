@@ -78,3 +78,10 @@ botaoMenu.addEventListener("click", function(){
     botaoMenu.setAttribute("aria-expanded", menuAberto);
 });
 }
+
+// ANO ATUAL DO RODAPÉ
+const anoAtual = document.querySelector("#ano-atual");
+
+if (anoAtual) {
+    anoAtual.textContent = new Date().getFullYear();
+}
