@@ -820,7 +820,6 @@ h3 {
 /*QUADROS PARA APRESENTAR AS ESPECIALIZAÇÕES NA ABA SOBRE*/
 
 .quadro,
-.quadro2,
 .quadro3,
 .quadro4 {
   background-color: rgba(255, 255, 255, 0.80);
@@ -839,7 +838,6 @@ h3 {
 /*TITULO DE CADA ESPECIALIZAÇÃO*/
 
 .quadro h3,
-.quadro2 h3,
 .quadro3 h3,
 .quadro4 h3 {
   margin-top: 0;
@@ -849,7 +847,6 @@ h3 {
 /*PARÁGRAFOS*/
 
 .quadro p,
-.quadro2 p,
 .quadro3 p,
 .quadro4 p {
   line-height: 1.8;
@@ -860,7 +857,6 @@ h3 {
 /* DESTAQUE DO "VOCÊ SABIA? NA PÁGINA SOBRE */
 
 .quadro p strong,
-.quadro2 p strong,
 .quadro3 p strong,
 .quadro4 p strong {
   display: inline-block;
