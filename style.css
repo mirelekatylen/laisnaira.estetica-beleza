@@ -800,7 +800,7 @@ h3 {
 
   background-image: url("imagens/lais-profissional2.jpg");
   background-size: cover;
-  background-position: center 5%;
+  background-position: center 80%;
   background-repeat: no-repeat;
 
   display: flex;
@@ -896,8 +896,11 @@ h3 {
 /* RESPONSIVIDADE DA PÁGINA SOBRE */
 
 @media (max-width: 768px) {
-  .sobre {
+   .sobre {
     padding: 50px 20px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .conteudo-sobre {

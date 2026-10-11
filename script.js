@@ -116,6 +116,7 @@ imagem.addEventListener("touchstart", function() {
 document.addEventListener("touchend", function() {
     iniciarCarrossel();
 });
+} // FIM DO BLOCO CARROSSEL
 
 // MENU MOBILE
 const botaoMenu = document.querySelector(".menu-mobile");
@@ -133,5 +134,4 @@ const anoAtual = document.querySelector("#ano-atual");
 
 if (anoAtual) {
     anoAtual.textContent = new Date().getFullYear();
-}
 }
