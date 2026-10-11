@@ -372,7 +372,7 @@ h3 {
     margin: auto;
 }
 
-/*Bloco de cada serviço*/
+/* BLOCO DE CADA SERVIÇO */
 
 .servico {
   position: relative;
@@ -389,13 +389,13 @@ h3 {
   border-bottom: 1px solid #e5e0da;
 }
 
-/*ALTERA A POSIÇÃO DA IMAGEM EM CADA SERVIÇO NA PÁGINA DE SERVIÇOS */
+/* ALTERA A POSIÇÃO DA IMAGEM EM CADA SERVIÇO NA PÁGINA DE SERVIÇOS */
 
 .servico.invertido {
   flex-direction: row-reverse;
 }
 
-/*IMAGEM*/
+/* IMAGEM */
 
 .servico-imagem {
     flex: 1;
@@ -411,7 +411,7 @@ h3 {
     border-radius: 14px;
 }
 
-/*BLOCO DE INFORMAÇÕES NA PÁGINA DE SERVIÇOS */
+/* BLOCO DE INFORMAÇÕES NA PÁGINA DE SERVIÇOS */
 
 .servico-informacoes {
     flex: 1;
@@ -437,7 +437,7 @@ h3 {
   margin-top: 10px;
 }
 
-/*PREÇO E DURAÇÃO NA PÁGINA DE SERVIÇOS */
+/* PREÇO E DURAÇÃO NA PÁGINA DE SERVIÇOS */
 
 .servico-detalhes {
     margin-bottom: 28px;
@@ -447,7 +447,7 @@ h3 {
     margin: 8px 0;
 }
 
-/*ABA DE BENEFÍCIOS NA PÁGINA DE SERVIÇOS */
+/* ABA DE BENEFÍCIOS NA PÁGINA DE SERVIÇOS */
 
 .servico-informacoes h3 {
     margin-bottom: 12px;
@@ -461,7 +461,7 @@ h3 {
     margin-bottom: 8px;
 }
 
-/*BOTÃO DE AGENDAMENTO NA PÁGINA DE SERVIÇOS */
+/* BOTÃO DE AGENDAMENTO NA PÁGINA DE SERVIÇOS */
 .botao-agendar {
   display: inline-block;
 
@@ -509,7 +509,7 @@ h3 {
 
 }
 
-/* PÁGINA INÍCIO, TODA A ESTRUTURA, FOREA O CABEÇALHO */
+/* PÁGINA INÍCIO, TODA A ESTRUTURA, FORE A O CABEÇALHO */
 /* FOTO DO PLANO DE FUNDO */
 
 .inicio {
@@ -790,15 +790,18 @@ h3 {
   transform: scale(1.05);
 }
 
-/*PÀGINA SOBRE,toda a estrutura, fora o cabeçalho*/
-/*Foto no plano de fundo*/
+/*PÀGINA SOBRE,TODA A ESTRUTURA, FORA O CABEÇALHO */
+/* FOTO NO PLANO DE FUNDO */
 
 .sobre {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
 
-  background-color: #FAF8F5;
+  background-image: url("imagens/lais-profissional2.jpg");
+  background-size: cover;
+  background-position: center 5%;
+  background-repeat: no-repeat;
 
   display: flex;
   align-items: center;
@@ -807,7 +810,17 @@ h3 {
   padding: 80px 10%;
 }
 
-/*Edição da foto*/
+/* CAMADA BRANCA SOBRE A FOTO*/
+  .sobre::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(255, 255, 255, 0.55);
+    z-index: 0;
+  }
+
+/* EDIÇÃO DA FOTO */
 
 .conteudo-sobre {
   position: relative;
