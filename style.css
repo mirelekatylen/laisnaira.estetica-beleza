@@ -24,11 +24,20 @@ header img {
   height: 65px;
   width: auto;
   display: block;
+  mix-blend-mode: multiply;
 }
 
 nav {
   display: flex;
   gap: 24px;
+}
+
+/* TRAÇO NO CABEÇALHO ANTES DO NOME INICIO */
+@media (min-width: 769px) {
+  nav {
+    border-left: 1px solid rgba(91, 57, 35, 0.55);
+    padding-left: 25px;
+  }
 }
 
 nav a {
@@ -53,7 +62,7 @@ nav a.active {
 @media (max-width: 768px) {
   .menu-mobile {
     display: block;
-    background-color: none;
+    background-color: transparent;
     border: none;
     color: #4a3025;
     font-size: 30px;
@@ -798,10 +807,7 @@ h3 {
   overflow: hidden;
   min-height: 100vh;
 
-  background-image: url("imagens/lais-profissional2.jpg");
-  background-size: cover;
-  background-position: center 80%;
-  background-repeat: no-repeat;
+  background-color: #FAF8F5;
 
   display: flex;
   align-items: center;
@@ -1201,4 +1207,12 @@ h3 {
 .logo-area span {
     font-size: 18px;
     color: #5A4630;
+}
+
+/* OCULTA O SELO E O PAINEL PROMOCIONAL NO NETLIFY */
+#netlify-badge-drawer,
+.netlify-badge,
+iframe[src*="netlify"] {
+  display: none !important;
+  visibility: hidden !important;
 }

@@ -20,7 +20,11 @@ const avaliacoes = [
     "imagens/img3.png",
     "imagens/img4.png",
     "imagens/img5.png",
-    "imagens/img6.png"
+    "imagens/img6.png",
+    "imagens/img7.png",
+    "imagens/img8.png",
+    "imagens/img9.png",
+    "imagens/img10.png"
 ];
 
 // DIZ QUAL IMAGEM ESTÁ SENDO EXIBIDA
